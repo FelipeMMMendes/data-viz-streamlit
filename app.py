@@ -6,7 +6,7 @@ import seaborn as sns
 from streamlit_folium import folium_static
 import folium
 
-df = pd.read_csv('data\Dataset_FireWatch_Brazil_2024_combined_updated.csv')
+df = pd.read_csv('data\\Dataset_FireWatch_Brazil_2024_combined_updated.csv')
 
 df['data'] = pd.to_datetime(df['data'])
 df = df.sort_values('data')
